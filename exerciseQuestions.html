@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>How the Web Works Exercises</h1>
+<h2>Part One: Solidify Terminology</h2>
+In your own terms, define the following terms: <br>
+
+What is HTTP? <br>
+- hypertext transfer protocol.  It is a markup language comprised of text that tells a browser what to display and how to act. <br>
+What is a URL?<br>
+- Universal Resource Locator - is a human-readable version of an IP address.  Tells a server what you want it to return to your browser <br>
+What is DNS? <br>
+- Domain Name Server - the system that translates a url into an ip address 
+What is a query string? <br>
+- a string that sends information to server in the form of a key and a value <br>
+What are two HTTP verbs and how are they different? <br>
+- GET and POST.  Get requests information of a server with no side-effects.  Post requests information but can also change the status of the server as well
+What is an HTTP request? <br>
+- requesting information of a server <br>
+What is an HTTP response? <br>
+- server returning information to the client - could be in the form of a web page
+What is an HTTP header? Give a couple examples of request and response headers you have seen. <br>
+- A header is the information sent first when you communicate between server and client.   <br>
+- request header comes from the client browser and includes such things as date and time, type of request (get or post), information on cookies and language preferences. <br>
+- a response header answers with such things as date and time the server thinks it is, cookies it wants stored, response code (200, 300, 404, 500, etc.) and type of document
+What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser? <br>
+- the DNS system translates that into an IP address <br>
+- a request is sent to the server usually in the form of a GET request <br>
+- the server checks it's internal file system to see if it can grant the request - possibly using resources like a database along the way <br>
+- server responds with either an error or a 200 code and sends the header and data (usually a website) back to the requesting computer to be displayed in the browser <br><br>
+<h2>Part Two: Practice Tools</h2>
+(Done)
+
+All jokes about pirates: <br>
+{
+    <br>"limit": 20,
+    <br>"current_page": 1,
+    <br>"next_page": 1,
+    <br>"previous_page": 1,
+    <br>"results": [
+    <br>  {
+    <br>    "id": "QuscibaMClb",
+    <br>    "joke": "What does a pirate pay for his corn? A buccaneer!"
+    <br>  },
+    <br>  {
+    <br>    "id": "SvzIBAQS0Dd",
+    <br>    "joke": "What did the pirate say on his 80th birthday? Aye Matey!"
+    <br>  },
+    <br>  {
+    <br>    "id": "2gii3LeN7Ed",
+    <br>    "joke": "Why couldn't the kid see the pirate movie? Because it was rated arrr!"
+    <br>  },
+   <br>   {
+    <br>    "id": "exXSCtkOKe",
+    <br>    "joke": "Why do pirates not know the alphabet? They always get stuck at \"C\"."
+    <br>  },
+    <br>  {
+    <br>    "id": "SnOf2gqjiqc",
+    <br>    "joke": "Why are pirates called pirates? Because they arrr!"
+    <br>  }
+    <br>],
+    <br>"search_term": "pirate",
+    <br>"status": 200,
+    <br>"total_jokes": 5,
+    <br>"total_pages": 1
+ <br> }
+ <br>
+
+ ip address of icanhasdadjoke.com:   2606:4700:3032::681b:b3ad:<br>
+ (using cmd ping instead of dig since dig does not work on PC)
+
+ <h3>Part 3:</h3>
+ Done with DadJokeGetter.html
+<br>
+<h3>Part 4:</h3>
+Done in the browser/devTools    
+</body>
+</html>
